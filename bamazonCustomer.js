@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
     host: "localhost",
   
     // Your port; if not 3306
-    port: 3307,
+    port: 8889,
   
     // Your username
     user: "root",
@@ -90,7 +90,7 @@ var connection = mysql.createConnection({
         //stores users wanted id and quantity into a variable
         selectID = response.select_id;
         selectQ = response.select_q;
-        console.log(selectID, selectQ);
+        
         connection.query("SELECT stock_quantity, price, product_name FROM products WHERE item_id ="+selectID, (err, res) => {
             if(err) throw err;
 

@@ -9,7 +9,7 @@ var updatedQ = 0;
 var connection = mysql.createConnection({
     host: "LocalHost",
 
-    port: 3307,
+    port: 8889,
 
     user: "root",
 
